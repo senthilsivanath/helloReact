@@ -9,29 +9,22 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View,
-  Image,
-  ScrollView
+  View
 } from 'react-native';
 
 class helloReact extends Component {
-  constructor(props, context) {
-    super(props, context);
-    this.state = {check: "sample"};
-  }
   render() {
     return (
-      <View>
-        <Text>
-          On iOS, a React Native ScrollView uses a native UIScrollView.
-          On Android, it uses a native ScrollView.
-
-          On iOS, a React Native Image uses a native UIImageView.
-          On Android, it uses a native ImageView.
-
-          React Native wraps the fundamental native components, giving you
-          the performance of a native app, plus the clean design of React.
-          {this.state.check}
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          Welcome to React Native!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit index.ios.js
+        </Text>
+        <Text style={styles.instructions}>
+          Press Cmd+R to reload,{'\n'}
+          Cmd+D or shake for dev menu
         </Text>
       </View>
     );
